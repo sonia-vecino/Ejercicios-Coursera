@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Dynamic Details Page</title>
+	
 	<script type="text/javascript">	
 	function addParagraphText()
 	{
@@ -12,10 +13,10 @@
 	}
 	</script>
 </head>
-
+<!-- el objetivo de este ejercicio es aprender sobre el evento Onclick. Al hacer click en el boton "click me" aparece una leyenda como reacción a ese click-->
 <body>
 <h1 style="color:blue";>Let´s see what does this button</h1>
-	<button onclick="addParagraphText();">Click Me</button>
+	<button onclick="addParagraphText();"> Click Me </button>
 	<p id="para"></p>
 	
 </body>	

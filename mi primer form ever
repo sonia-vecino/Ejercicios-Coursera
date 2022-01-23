@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Forms 3</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+	function validateForm (){
+		var pass1=document.getElementById("password1").value;
+		var pass2=document.getElementById("password2").value;
+		if (pass1=pass2) {
+			alert("passwords match");
+			return true;
+		}
+		else {
+			alert ("passwords do not match");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+  <div>
+	<form action="mySubmitPage.html" onsubmit="return validateForm();">
+		First name: <br>
+		<input type="text" name="firstname" required><br>
+		Last name:<br>
+		<input type="text" name="lastname"><br>
+		User Password: <br>
+		<input type="password" id="password1">
+    <br>
+		<input type="password" id="password2">
+    <br>
+	</form>
+  </div>
+  <p> What do you prefer?</p>
+  <form action="mySubmitPage.html" onsubmit="return validateForm();">
+		<input type="radio" name="food" value="pizza" checked>Pizza<br>
+		<input type="radio" name="food" value="tacos">Tacos<br>
+		<input type="radio" name="food" value="Salad">Salad<br>
+   <p> Knowledge: </p>
+
+		<input type="checkbox" name="skills" value="HTML">I know HTML<br>
+		<input type="checkbox" name="skills" value="Javascript">I know JS<br>
+		Quantity (between 1 and 5):
+		<input type="number" name="quantity" min="1" max="5">
+    <p> Select </p>
+		Birthday:
+		<input type="date" name="birthday">
+    <br>
+		Select your Favourite color:
+		<input type="color" name="favcolor">
+    <br>
+		<input type="submit" name="Submit">
+	</form>
+  <br>
+<button>Click Me</button>
+</body>
+</html>

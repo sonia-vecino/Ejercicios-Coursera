@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My alert Page</title>
+</head>
+<body>	
+<!-- al apretar el boton "test alert", surgirá una ventana confirmando que el evento onclick esta ok, 
+y cuando escribamos un numero en el área input y apretamos el boton "multiply by 5" el resultado se mostrará en otra ventana emergente --> 
+	<script>	
+	function myAlertMath (){
+	
+	var userNumber= document.getElementById("mathInput").value;
+	alert ("Your number x 5 is " + userNumber * 5); 
+	}
+	function myAlertTest () {
+	alert ("The test worked")
+	} 
+	</script>
+  
+<p> Javascript Alert Test</p>
+<button onclick="myAlertTest()"> Alert Test </button>
+	<input id="mathInput" type="number"/><button onclick="myAlertMath ()"> Multiply by 5 </button>
+	<p id="test"></p>
+</body>	
+</html>	

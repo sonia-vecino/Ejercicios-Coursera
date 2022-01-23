@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body {
+	background-color:#dcedc1;
+	margin: 15px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+}
+h1 {
+	text-align: center;
+	background-color: #84e3c8;
+	color:white;
+}
+.rrr {
+	text-align:center;
+	font-size:120%;
+  	color: #ff7480;
+}
+main {
+	width:65%;
+	height:auto;
+}
+img {
+	float: right;
+	margin-top: 50px;
+	margin-right: 60px;
+	padding: 10px;
+	opacity: 0.5;
+}
+h2 {
+	color:#84E3c8;
+}
+h3 {
+  color:#ff7480;
+  
+}
+h4,h5 {
+  color: #ffaaa5;
+}
+.donacion {
+	color:rgb(10, 145, 100);
+}
+ul {
+  list-style-type:none;
+}
+
+section {
+	border: 4px dotted #84e3c8;;
+	width: auto;
+	height:auto;
+	display: flex;
+	text-align:center;
+}
+article {
+	width:40%;
